@@ -8,9 +8,6 @@ An n-tier mock banking system built with 100% vanilla Java EE 6 and a derby data
 	- Business Objects
 	- Session Facade
 - POJO client to quickly test the system
-
-##Still to come..
-
 - Complete MVC system EJB Servlet JSP
 - Bank to bank web service
 - Home Loan accounts
