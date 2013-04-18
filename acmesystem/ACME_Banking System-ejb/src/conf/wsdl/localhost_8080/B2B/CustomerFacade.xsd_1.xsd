@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://facade.beans/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://facade.beans/">
+
+<xs:element name="add" type="tns:add"/>
+
+<xs:element name="addResponse" type="tns:addResponse"/>
+
+<xs:element name="createCreditRequest" type="tns:createCreditRequest"/>
+
+<xs:element name="createCreditRequestResponse" type="tns:createCreditRequestResponse"/>
+
+<xs:element name="depositSavingsAccount" type="tns:depositSavingsAccount"/>
+
+<xs:element name="depositSavingsAccountResponse" type="tns:depositSavingsAccountResponse"/>
+
+<xs:element name="getSavingsBalance" type="tns:getSavingsBalance"/>
+
+<xs:element name="getSavingsBalanceResponse" type="tns:getSavingsBalanceResponse"/>
+
+<xs:element name="paybackCreditCard" type="tns:paybackCreditCard"/>
+
+<xs:element name="paybackCreditCardResponse" type="tns:paybackCreditCardResponse"/>
+
+<xs:element name="purchaseOnCreditCard" type="tns:purchaseOnCreditCard"/>
+
+<xs:element name="purchaseOnCreditCardResponse" type="tns:purchaseOnCreditCardResponse"/>
+
+<xs:element name="transfer" type="tns:transfer"/>
+
+<xs:element name="transferResponse" type="tns:transferResponse"/>
+
+<xs:element name="withdrawSavingsAccount" type="tns:withdrawSavingsAccount"/>
+
+<xs:element name="withdrawSavingsAccountResponse" type="tns:withdrawSavingsAccountResponse"/>
+
+<xs:complexType name="depositSavingsAccount">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositSavingsAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="withdrawSavingsAccount">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="withdrawSavingsAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSavingsBalance">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSavingsBalanceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="add">
+<xs:sequence>
+<xs:element name="num1" type="xs:double"/>
+<xs:element name="num2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="paybackCreditCard">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="paybackCreditCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transfer">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transferResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCreditRequest">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCreditRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchaseOnCreditCard">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:double"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchaseOnCreditCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

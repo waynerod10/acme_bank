@@ -1,0 +1,46 @@
+/* 
+    Document   : common
+    Created on : 27/09/2012, 12:19:18 PM
+    Author     : wayne
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.page{width:850px;margin:auto;}
+/*.page{margin:auto;}*/
+.header {background-color:#3399FF;height:50px}
+.companyName{font-family:"Radio Space", Verdana, Arial, Helvetica, sans-serif;font-size:15pt;font-weight:bold;text-align:center;padding-top:13px}
+.navBar{background-color:#BDD8DA;height:600px;width:200px;float:left;}
+.navH{text-align:center;position:relative;top:100px}
+.mainH{text-align:center;}
+.links{text-align:left;position:absolute;top:200px}
+.content{background-color:#ECECEC;height:600px;width:650px;float:right}
+.footer{background-color:#9eaeff;text-align:center;}
+
+
+/*Registration Page*/
+#registration_form .error
+{
+	color:red;
+	font-size:12px;
+	margin-left:100px;
+	
+}/*display:none;*/
+
+#registration_form .label
+{
+	float: left;
+	width: 240px; /*was 140px*/
+}
+
+.regInput
+{
+	width:200px;
+	margin-bottom:5px;
+	margin-left: 10px;
+}
+
